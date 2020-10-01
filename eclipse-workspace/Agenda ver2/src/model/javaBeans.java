@@ -5,6 +5,19 @@ public class javaBeans {
 	private String nome;
 	private String fone;
 	private String email;
+	
+	//construtor padão
+	public javaBeans () {
+		
+	}
+	//construtor que recebe o vetor(ArrayList) do método listarContatos()(DAO)
+	public javaBeans(String id, String nome, String fone, String email) {
+		this.id = id;
+		this.nome = nome;
+		this.fone = fone;
+		this.email = email;
+		
+	}
 
 	public String getId() {
 		return id;
